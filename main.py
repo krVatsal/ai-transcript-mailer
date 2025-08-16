@@ -54,7 +54,7 @@ Generate a structured summary as per the instruction.
 
     # Editable summary
     if "summary" in st.session_state:
-        st.subheader("Generated Summary (editable)")
+        st.subheader("Generated Summary")
         edited_summary = st.text_area("Edit the summary as needed:", value=st.session_state["summary"], height=300)
         st.session_state["edited_summary"] = edited_summary
 
@@ -85,7 +85,7 @@ Generate a structured summary as per the instruction.
 
 
     st.markdown("---")
-    st.markdown("Built with Streamlit & LangChain")
+    st.markdown("Built by Vatsal :)")
 
 
 if __name__ == "__main__":
